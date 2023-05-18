@@ -1,0 +1,80 @@
+@import '../../index.scss';
+
+.ticketSort {
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 504px;
+  margin-bottom: 35px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    background-color: #ffffff;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    border: 1px solid #dfe5ec;
+    @include cursor;
+
+    &:hover {
+      background-color: #2196f3;
+      color: #ffffff;
+      transition: 0.3s;
+    }
+
+    @media (min-width: 768px) {
+      width: 168px;
+    }
+  }
+
+  &__item__active {
+    background-color: #2196f3;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #0070cc;
+      color: #ffffff;
+      transition: 0.3s;
+    }
+  }
+
+  &__item__left {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 0;
+
+    @media (min-width: 768px) {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 5px;
+      border: 1px solid #dfe5ec;
+      border-right: 0;
+    }
+  }
+
+  &__item__right {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 0;
+
+    @media (min-width: 768px) {
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 0px;
+      border: 1px solid #dfe5ec;
+      border-left: 0;
+    }
+  }
+
+  &__label {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    @include cursor;
+  }
+}

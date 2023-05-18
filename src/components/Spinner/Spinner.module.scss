@@ -1,0 +1,8 @@
+.spinner {
+  position: absolute;
+  top: 155px;
+
+  @media (min-width: 768px) {
+    top: 55px;
+  }
+}

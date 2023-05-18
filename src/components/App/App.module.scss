@@ -1,0 +1,40 @@
+.App {
+  padding: 20px 10px;
+  margin: 0 auto;
+  max-width: 504px;
+
+  @media (min-width: 768px) {
+    padding: 50px 24px;
+  }
+
+  @media (min-width: 960px) {
+    padding: 50px 32px;
+  }
+
+  &__logo {
+    display: block;
+    margin: 0 auto 15px auto;
+
+    @media (min-width: 768px) {
+      margin: 0 auto 30px auto;
+    }
+  }
+
+  &__container {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      column-gap: 20px;
+    }
+  }
+
+  &__content {
+    margin: 0 auto;
+    max-width: 504px;
+    position: relative;
+
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+  }
+}
